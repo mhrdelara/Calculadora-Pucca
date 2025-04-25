@@ -18,22 +18,59 @@ body{
     flex-direction: column;
     gap: 0.5px;
 }
-.calculo{
+.calculo{ 
     display: flex;
     justify-content: center;
     height: 25px;
     background:#ff0000;
+    font-family: Indie Flower;
+    color: white;
+
+
 }
 .botoes{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    width: 100px;
-    height: 25px;
+    width: 200px;
+    height: 45px;
+ 
 }
+
 button{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    gap: 20px;
+    background: rgb(194, 85, 85);
+    transition: 0.5s;
+    color: white;
+
+}
+
+button:active{
     height: 25px;
     width: 70px;
+    background: rgb(150, 65, 65);
+    
+
+}
+input{
+    border: 2px solid black;
+    text-align: end;
+    font-family: Embed;
+    width: 180px;
+   
+}
+.pucca{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 25px;
+    background:#ff0000;
+
 }
 
