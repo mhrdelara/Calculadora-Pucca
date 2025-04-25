@@ -6,44 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+</style>
 
 <body>
     <div>
-        <div class="calculo">
-            <input type="number">
         </div>
         <div><img
                 src="https://www.google.com/imgres?q=pucca%20wallpaper%20pc&imgurl=https%3A%2F%2Fc4.wallpaperflare.com%2Fwallpaper%2F551%2F792%2F868%2Flove-wallpaper-preview.jpg&imgrefurl=https%3A%2F%2Fwww.wallpaperflare.com%2Fsearch%3Fwallpaper%3Dpucca&docid=tw8OjuDxmFXAJM&tbnid=pAfIswe1fvwU_M&vet=12ahUKEwi-2c3u-e6MAxVDr5UCHUi4BvMQM3oECCYQAA..i&w=728&h=455&hcb=2&ved=2ahUKEwi-2c3u-e6MAxVDr5UCHUi4BvMQM3oECCYQAA"
                 alt=""></div>
+                <div class="pucca">
+                    <div class="calculo">
+                        <h3>CALCULADORA PUCCA</h3>
+                    </div>
+                </div>
         <div class="pai">
-            <div class="botoes">
-                <button onclick="7">7</button>
-                <button onclick="8">8</button>
-                <button onclick="9">9</button>
-                <button onclick="apagar">✖</button>
-            </div>
-            <div class="botoes">
-                <button onclick="4">4</button>
-                <button onchange="5">5</button>
-                <button onclick="6">6</button>
-                <button onclick="divisão">/</button>
-            </div>
-            <div class="botoes">
-                <button onclick="1">1</button>
-                <button onclick="2">2</button>
-                <button onclick="3">3</button>
-                <button onclick="multiplicação">*</button>
-            </div>
-            <div class="botoes">
-                <button onclick="0">0</button>
-                <button onclick="subtração">-</button>
-                <button onclick="soma">+</button>
-                <button onclick="igual">=</button>
-            </div>
+            <input id="text">
+                <div class="botoes">
+                    <button onclick="adicionarValor(7)">7</button>
+                    <button onclick="adicionarValor(8)">8</button>
+                    <button onclick="adicionarValor(9)">9</button>
+                    <button onclick="apagarValor('✖')">✖</button>
+                </div>
+                <div class="botoes">
+                    <button onclick="adicionarValor(4)">4</button>
+                    <button onclick="adicionarValor(5)">5</button>
+                    <button onclick="adicionarValor(6)">6</button>
+                    <button onclick="adicionarValor('/')">/</button>
+                </div>
+                <div class="botoes">
+                    <button onclick="adicionarValor(1)">1</button>
+                    <button onclick="adicionarValor(2)">2</button>
+                    <button onclick="adicionarValor(3)">3</button>
+                    <button onclick="adicionarValor('*')">*</button>
+                </div>
+                <div class="botoes">
+                    <button onclick="adicionarValor(0)">0</button>
+                    <button onclick="adicionarValor('-')">-</button>
+                    <button onclick="adicionarValor('+')">+</button>
+                    <button onclick="aparecerValor('=')">=</button>
+                </div>
         </div>
+       
     </div>
+  
 </body>
 
 </html>
